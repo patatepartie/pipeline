@@ -15,3 +15,11 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore the generated content of public
+/public/*
+!/public/favicon.ico
+!/public/robots.txt
+
+# Ignore node_modules but leave possibility to vc part of it
+/node_modules/*
