@@ -9,7 +9,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("js", function() {
-  return browserify("front/javascripts/app.js")
+  return browserify("./front/javascripts/app.js")
         .transform(hbsfy)
         .bundle()
         .pipe(source("app.js"))
