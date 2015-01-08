@@ -23,3 +23,4 @@
 
 # Ignore node_modules but leave possibility to vc part of it
 /node_modules/*
+npm-debug.log
