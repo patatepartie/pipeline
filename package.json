@@ -3,9 +3,14 @@
   "author": "Cyril Ledru<cyril.ledru@gmail.com>",
   "version": "0.1.0",
   "dependencies": {
+    "handlebars": "^2.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "browserify": "^8.0.3",
+    "gulp": "^3.8.10",
+    "handlebars": "^2.0.0",
+    "hbsfy": "^2.2.1",
+    "vinyl-source-stream": "^1.0.0"
   },
   "jshintConfig": {
     "asi": false,
