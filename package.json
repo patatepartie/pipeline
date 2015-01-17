@@ -1,0 +1,28 @@
+{
+    "name": "pipeline",
+    "author": "Cyril Ledru<cyril.ledru@gmail.com>",
+    "version": "0.1.0",
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "jshintConfig": {
+        "asi": false,
+        "browser": true,
+        "curly": false,
+        "expr": true,
+        "indent": 4,
+        "loopfunc": true,
+        "node": true,
+        "trailing": true,
+        "undef": true,
+        "white": true
+    },
+    "scripts": {
+        "build": "npm run build:images -s && npm run build:styles -s && npm run build:scripts -s && npm run build:markups -s",
+        "build:images": "cp -f front/images/* public/assets/ || :",
+        "build:styles": "cp -f front/stylesheets/app.css public/",
+        "build:scripts": "cp -f front/javascripts/app.js public/",
+        "build:markups": "cp -f front/index.html public/"
+    }
+}
