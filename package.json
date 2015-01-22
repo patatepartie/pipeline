@@ -21,7 +21,8 @@
   "devDependencies": {
     "browserify": "^8.1.1",
     "handlebars": "^2.0.0",
-    "hbsfy": "^2.2.1"
+    "hbsfy": "^2.2.1",
+    "stylus": "^0.49.3"
   },
   "jshintConfig": {
     "asi": false,
@@ -40,7 +41,7 @@
     "prebuild": "npm run clean -s",
     "build": "npm run build:images -s && npm run build:styles -s && npm run build:scripts -s && npm run build:markups -s",
     "build:images": "cp -f front/images/* public/assets/ || :",
-    "build:styles": "cp -f front/stylesheets/app.css public/",
+    "build:styles": "stylus --include-css front/stylesheets/app.styl --out public",
     "build:scripts": "browserify -t hbsfy front/javascripts/app.js > public/app.js",
     "build:markups": "cp -f front/index.html public/"
   }
